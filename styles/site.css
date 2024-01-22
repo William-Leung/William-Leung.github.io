@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(252, 252, 252);
+  color: rgb(90, 31, 31);
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  
+}
+
+nav ul li {
+  display: block;
+  list-style: none;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(90, 31, 31);
+  font-size: 18px;
+}
+
+nav {
+  margin-left: 55%;
+}
+
+nav ul {
+  display: flex;
+}
+
+.navigation {
+  background-color: blanchedalmond;
+}
+
+
+/* - - - for narrow screens - - - */
+@media (max-width: 1122px) {
+}
