@@ -1,39 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
-  background-color: rgb(252, 252, 252);
-  color: rgb(90, 31, 31);
-  margin: 0px;
-  padding: 0px;
+  height: 100vh;
+  background-color: rgb(211, 185, 185);
+  background-image: url("https://images.unsplash.com/photo-1480497490787-505ec076689f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fHw%3D");
+  background-size: cover;
+  background-position: center;
 }
 
-.navbar {
-  
-}
-
-nav ul li {
-  display: block;
+/* ------Nav Bar------ */
+nav li {
   list-style: none;
   padding: 10px;
 }
 
-nav ul li a {
+nav a {
   text-decoration: none;
-  color: rgb(90, 31, 31);
-  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
 }
 
-nav {
-  margin-left: 55%;
+nav li a:hover {
+  color: rgb(86, 109, 176);
 }
 
-nav ul {
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
 }
 
-.navigation {
-  background-color: blanchedalmond;
+.links {
+  display: flex;
+  gap: 1.2rem;
 }
 
+/* ------Contact Button ------ */
+.action_button {
+  background-color: orange;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2 ease;
+}
 
-/* - - - for narrow screens - - - */
-@media (max-width: 1122px) {
+.action_button:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.action_button:active {
+  transform: scale(0.95);
+}
+
+/* ------Hamburger------ */
+.bar1 {
+  width: 30px;
+  height: 6px;
+
+  background-color: #9BBEC8;
+  margin: 4px 3px;
+
+  transition: background-color 0.6s;
+}
+
+.bar2 {
+  width: 30px;
+  height: 6px;
+
+  background-color: #427D9D;
+  margin: 3px 3px;
+
+  transition: background-color 0.7s;
+}
+
+.bar3 {
+  width: 30px;
+  height: 6px;
+
+  background-color: #164863;
+  margin: 4px 3px;
+
+  transition: background-color 0.9s;
+}
+
+#menu-bars {
+  margin-right: -20%;
+}
+
+#menu-bars:hover {
+  cursor: pointer;
+}
+
+#menu-bars:hover .bar1 {
+  background-color: #D2E3C8;
+}
+
+#menu-bars:hover .bar2 {
+  background-color: #86A789;
+}
+
+#menu-bars:hover .bar3 {
+  background-color: #739072;
+}
+
+/* ------Main Content------ */
+#home-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-size: 4rem;
+}
+
+/** For narrow screens */
+@media (max-width: 372px) {
+  body {
+    background-image: none;
+  }
 }
